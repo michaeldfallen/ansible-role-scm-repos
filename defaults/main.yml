@@ -1,0 +1,11 @@
+---
+
+default_git_repos_shallow_clone: yes
+default_git_repos_update: yes
+
+git_repos: false
+# git_repos:
+#   - repo: git@github.com:foo/bar.git
+#     path: ~/.repos/bar
+#     latest: yes                       | defaults to yes
+#     shallow: no                       | defaults to yes

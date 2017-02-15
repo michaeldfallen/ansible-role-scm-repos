@@ -1,0 +1,14 @@
+---
+
+galaxy_info:
+  author: michaeldfallen
+  description: Clones scm repos and keeps them up to date
+  min_ansible_version: 1.4
+  license: MIT
+  platforms:
+  - name: Ubuntu
+    versions:
+    - all
+  categories:
+  - system
+dependencies: []

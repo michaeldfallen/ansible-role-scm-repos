@@ -1,0 +1,11 @@
+---
+
+- name: "Install git repos"
+  git:
+    repo: "{{ item.repo }}"
+    dest: "{{ item.path }}"
+    depth: "{{ item.shallow | default(default_git_repos_shallow_clone) | ternary(1, omit) }}"
+    update: "{{ item.latest | default(default_git_repos_update) | ternary('yes', 'no') }}"
+  with_items:
+    - "{{ git_repos }}"
+  when: git_repos
